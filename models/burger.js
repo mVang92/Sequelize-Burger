@@ -1,4 +1,4 @@
-console.log("Reading burgers.js")
+console.log("Reading burger.js")
 module.exports = function (sequelize, DataTypes) {
   var Burger = sequelize.define("Burger", {
     burger_name: {
@@ -6,7 +6,7 @@ module.exports = function (sequelize, DataTypes) {
       allowNull: false,
       validate: {
         // At least 1 character, no more than 20
-        len: [1, 20]
+        len: [1, 50]
       }
     },
     devoured: {
