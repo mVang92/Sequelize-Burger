@@ -1,6 +1,6 @@
 // Requiring our models
 var db = require("../models");
-
+console.log("Reading burgers-api-routes.js")
 // Routes
 // =============================================================
 module.exports = function(app) {

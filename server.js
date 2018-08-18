@@ -21,7 +21,8 @@ app.set("view engine", "handlebars");
 
 // Routes
 // =============================================================
-require("./routes/burgers-api-routes.js")(app);
+var routes = require("./controllers/burgers_controllers.js");
+app.use(routes);
 
 // Start our server so that it can begin listening to client requests.
 db.sequelize.sync({ force: true }).then(function (){

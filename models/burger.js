@@ -1,3 +1,4 @@
+console.log("Reading burgers.js")
 module.exports = function (sequelize, DataTypes) {
   var Burger = sequelize.define("Burger", {
     burger_name: {
